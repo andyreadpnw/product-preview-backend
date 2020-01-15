@@ -1,0 +1,2 @@
+class AltImagesController < ApplicationController
+end

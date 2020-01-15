@@ -1,0 +1,29 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: 1
+  product_name: MyString
+  style_id: 1
+  department: 1
+  status: MyString
+  priority: MyString
+  issue_type: MyString
+  issue_class: MyString
+  site: MyString
+  division: MyString
+  environment: MyString
+  product: one
+
+two:
+  parent_id: 1
+  product_name: MyString
+  style_id: 1
+  department: 1
+  status: MyString
+  priority: MyString
+  issue_type: MyString
+  issue_class: MyString
+  site: MyString
+  division: MyString
+  environment: MyString
+  product: two

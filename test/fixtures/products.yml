@@ -1,0 +1,27 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  parent_id: 1
+  name: MyString
+  department: 1
+  style_id: 1
+  color_id: 1
+  product_copy: MyString
+  product_main_image: MyString
+  fit: MyString
+  fabrication: MyString
+  style_type: MyString
+  product_load: one
+
+two:
+  parent_id: 1
+  name: MyString
+  department: 1
+  style_id: 1
+  color_id: 1
+  product_copy: MyString
+  product_main_image: MyString
+  fit: MyString
+  fabrication: MyString
+  style_type: MyString
+  product_load: two
