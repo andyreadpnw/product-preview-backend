@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_09_022312) do
+ActiveRecord::Schema.define(version: 2020_01_16_194124) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -69,7 +69,24 @@ ActiveRecord::Schema.define(version: 2020_01_09_022312) do
     t.index ["product_load_id"], name: "index_products_on_product_load_id"
   end
 
+  create_table "user_groups", force: :cascade do |t|
+    t.string "usergroup_name"
+    t.string "access_level"
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "username"
+    t.string "password_digest"
+    t.bigint "user_group_id", null: false
+    t.datetime "created_at", precision: 6, null: false
+    t.datetime "updated_at", precision: 6, null: false
+    t.index ["user_group_id"], name: "index_users_on_user_group_id"
+  end
+
   add_foreign_key "alt_images", "products"
   add_foreign_key "product_logs", "products"
   add_foreign_key "products", "product_loads"
+  add_foreign_key "users", "user_groups"
 end
