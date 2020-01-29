@@ -1,0 +1,37 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ecomm_approve: MyString
+  ecomm_approver: MyString
+  ecomm_comment: MyString
+  plm_approve: MyString
+  plm_approver: MyString
+  plm_comment: MyString
+  merchant_approve: MyString
+  merchant_approver: MyString
+  merchant_comment: MyString
+  planner_approve: MyString
+  planner_approver: MyString
+  planner_comment: MyString
+  other_approve: MyString
+  other_approver: MyString
+  other_comment: MyString
+  product: one
+
+two:
+  ecomm_approve: MyString
+  ecomm_approver: MyString
+  ecomm_comment: MyString
+  plm_approve: MyString
+  plm_approver: MyString
+  plm_comment: MyString
+  merchant_approve: MyString
+  merchant_approver: MyString
+  merchant_comment: MyString
+  planner_approve: MyString
+  planner_approver: MyString
+  planner_comment: MyString
+  other_approve: MyString
+  other_approver: MyString
+  other_comment: MyString
+  product: two

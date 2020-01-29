@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :approvals
   resources :users, only: [:create]
   # post '/login', to: 'auth#create'
   post '/auth', to: 'auth#create'
