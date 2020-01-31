@@ -30,6 +30,12 @@ class ProductsController < ApplicationController
         @product.destroy
     end
 
+    def destroy_all
+        # byebug
+        Product.destroy_all
+
+    end
+
 private
 
     def product_params
